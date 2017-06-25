@@ -1,0 +1,75 @@
+body {
+  background-color: #17202a;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+div.nav {
+  height: 50px;
+  border-bottom: 1px solid #273746;
+  vertical-align: middle;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #566573;
+}
+
+div.nav p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+div.chart-row {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+div.top-row {
+  padding-top: 50px;
+}
+
+h1.current-price {
+  font-size: 6em;
+  margin-bottom: 0px;
+}
+
+p.current-price-sub {
+  font-size: 1em;
+  color: #808b96;
+  margin-bottom: 0px;
+}
+
+p.current-price-change {
+  font-size: 3em;
+}
+
+p.daily-sub-heading {
+  font-size: 1em;
+  margin-bottom: 0px;
+}
+
+p.daily-sub-text {
+  font-size: 3em;
+}
+
+div.currency-select-holder {
+  padding-top: 10px;
+}
+
+span.currency-select a {
+  color: #566573;
+}
+
+span.currency-select a.active-link {
+  color:  #ecf0f1;
+}
+
+.price-up {
+  color: #2ecc71;
+}
+
+.price-down {
+  color: #c0392b;
+}

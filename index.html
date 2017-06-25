@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ether Price</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.2/socket.io.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script type="text/javascript" src=https://cryptoqween.github.io/streamer/ccc-streamer-utilities.js></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.core.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <div class="nav u-full-width text-center">
+    <p class="u-pull-left">Ether Price</p>
+    <div class="u-pull-right currency-select-holder"><span class="currency-select"><a class="active-link" href="#">GBP</a></span> | <span class="currency-select"><a href="#">USD</a></span></div>
+  </div>
+  <div class="container">
+    <div class="top-row row text-center">
+      <div class="three columns">
+        &nbsp;
+      </div>
+      <div class="six columns">
+        <h1 class="current-price"></h1>
+        <p class="current-price-sub">= 1 ETH</p>
+        <p class="current-price-change"></p>
+      </div>
+      <div class="three columns">
+        &nbsp;
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="four columns">
+        <p class="daily-sub-heading">Day Low</p>
+        <p class="daily-sub-text daily-low"></p>
+      </div>
+      <div class="four columns">
+        <p class="daily-sub-heading">Day Change</p>
+        <p class="daily-sub-text daily-change"></p>
+      </div>
+      <div class="four columns">
+        <p class="daily-sub-heading">Day High</p>
+        <p class="daily-sub-text daily-high"></p>
+      </div>
+    </div>
+    <div class="row chart-row">
+      <div class="twelve columns">
+        <div id="chart-container">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
